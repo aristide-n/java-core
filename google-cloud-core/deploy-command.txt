@@ -1,0 +1,9 @@
+ mvn deploy:deploy-file \
+     -Durl=file://<absolute path to google-cloud-datastore project-top-level-dir>/google-cloud-datastore/repo/ \
+     -Dfile=target/google-cloud-core-2.0.3-SNAPSHOT-LOCAL.jar \
+     -DgroupId=com.google.cloud \
+     -DartifactId=google-cloud-core \
+     -Dpackaging=jar \
+     -Dversion=2.0.3-SNAPSHOT-LOCAL
+
+(from https://sookocheff.com/post/java/local-maven-repository/)
